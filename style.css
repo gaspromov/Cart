@@ -1,0 +1,208 @@
+body, html{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+/*HEADER*/
+
+header{
+    background-color: #4e889b;
+    display: grid;
+    grid-template-rows: 3fr 0.71fr;
+    grid-template-columns: 1fr 8fr 10fr 8fr 1fr;
+    color: white;
+}
+
+header>a{
+    position: absolute;
+    top: 5px;
+    right: 220px;
+    color: white;
+}
+
+header .logo1{
+    grid-column: 2/3;
+}
+
+header .logo2{
+    grid-column: 4/5;
+}
+
+.logo1, .logo2{
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    justify-content: center;
+    align-self: center;
+    grid-column-gap: 20px;
+    vertical-align: center;
+}
+
+.logo1 img{
+    grid-column: 1/2;
+}
+
+.logo2 span{
+    grid-column: 2/3;
+}
+
+
+header ul{
+    grid-row: 2/3;
+    grid-column: 1/6;
+    padding: 0px;
+    list-style: none;
+    margin: 0px;
+    background-color: #376372;
+}
+
+header ul li{
+    display: inline-block;
+    padding: 0px;
+    margin-right: -5px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0px;
+}
+
+header ul li a:hover{
+    background-color: lightgrey;
+    color: white;
+}
+
+
+
+
+/*HEADER*/
+
+
+
+main{
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 11fr 1fr;
+}
+
+main>div{
+    grid-column: 2/3;
+}
+
+h2{
+    margin-bottom: 0px;
+}
+
+main h2, main>div>p{
+    text-align: center;
+}
+
+form{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr 8fr 0.3fr;
+    grid-row-gap: 20px;
+}
+
+form>div{
+    grid-row: 1/2;
+}
+
+form>input{
+    grid-column: 1/5;
+    grid-row: 3/4;
+    width: 100px;
+    justify-self: center;
+}
+
+div>input{
+    margin-bottom: 10px;
+}
+
+form table{
+    border-collapse: collapse;
+    grid-row: 2/3;
+    grid-column: 1/4
+}
+
+form table td{
+    border: 1px solid black;
+}
+
+
+/*FOOTERSTART*/
+
+
+footer {
+    position: absolute;
+    width:100%;
+    margin-top: 40px;
+    background-color: #376372;
+}
+
+#footerlinks {
+    padding-top: 40px;
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.dotlinklink h1 {
+    font-size: 18px;
+    font-family: "Tahoma";
+    color: white;
+}
+
+.dotlinklink a {
+    font-size: 13px;
+    font-family: "Tahoma";
+    color: #cccccc;
+    text-decoration: none;
+}
+.dotlinklink a:hover {
+    color: #000;
+}
+.dotlinklink {
+    display: flex;
+    flex-direction: column;
+}
+#Detimira {
+    padding-top: 30px;
+}
+#Detimira h1 {
+    font-size: 18px;
+    font-family: "Tahoma";
+    color: #cccccc;
+    text-align: center;
+}
+#footericons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#footericons img{
+    width: 50px;
+    height: 50px;
+}
+#footericons img:hover{
+    opacity: 0.7;
+}
+
+/*FOOTEREND*/
+
+/*TABLEEEEEEE*/
+
+.table {
+    text-align: center;
+}
+.table table{
+    table-layout: auto;
+    width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
